@@ -29,6 +29,8 @@ public class Jetpunk3
 		String password = prop.getProperty("jetpunkPassword");
 
 		driver.get("https://www.jetpunk.com/quizzes/fast-math-double-that-number");
+		
+		//login Begin
 		driver.findElement(By.xpath("//*[@id=\"inner-page\"]/div[1]/div/div[4]/div[1]/a")).click();
 		driver.findElement(By.xpath("//*[@id=\"login-modal\"]/div/div[2]/div[1]/input")).sendKeys(userName);
 		driver.findElement(By.xpath("//*[@id=\"login-modal\"]/div/div[2]/div[2]/input")).sendKeys(password);
@@ -38,7 +40,8 @@ public class Jetpunk3
 		WebDriverWait wait = new WebDriverWait(driver,15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(closeMark)));
 		driver.findElement(By.xpath(closeMark)).click();
-
+		//login End
+		
 		driver.findElement(By.id("start-button")).click();
 
 		WebElement inputBox = driver.findElement(By.id("txt-answer-box"));
