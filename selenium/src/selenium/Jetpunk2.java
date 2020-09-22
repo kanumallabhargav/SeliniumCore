@@ -22,6 +22,7 @@ public class Jetpunk2 {
 			String val = Integer.toString(i);
 			box.sendKeys(val);
 		}
+		
 	}
 
 }
