@@ -9,7 +9,7 @@ public class Frames {
 
 	public static void main(String[] args) 
 	{
-		System.setProperty("webdriver.chrome.driver", "/Users/bhargavkanmalla/Documents/selenium-java-3.141.59/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "//Users//bhargavkanmalla//Documents//selenium-java-3.141.59//chromedriver");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://jqueryui.com/droppable/");
 		driver.switchTo().frame(driver.findElement(By.cssSelector("iframe.demo-frame")));
