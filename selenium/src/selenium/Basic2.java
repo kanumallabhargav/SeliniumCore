@@ -17,6 +17,7 @@ public class Basic2
 		driver.findElement(By.id("username")).sendKeys("abcd");
 		driver.findElement(By.name("pw")).sendKeys("1234");
 		driver.findElement(By.xpath("//*[@id='Login']")).click();
+		driver.quit();
 	}
 
 }
