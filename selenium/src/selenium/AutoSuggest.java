@@ -1,5 +1,7 @@
 package selenium;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +17,7 @@ public class AutoSuggest {
 		driver.get("https://www.makemytrip.com/");
 		driver.findElement(By.id("fromCity")).click();
 		
-		
+		ArrayList<Boolean> l = new ArrayList<>();
 		//METHOD ONE -------> BASIC LOGIC
 		/*driver.findElement(By.xpath("//input[@placeholder='From']")).sendKeys("mum");
 		Thread.sleep(2000);
